@@ -8,9 +8,7 @@
     </head>
 
     <body>
-       
-        
-        <header>
+        <div class="header">
             <div id="headleft">
                 <a href="google.com" class="headLink">About</a>
                 <a href="google.com" class="headLink">Store</a>
@@ -20,14 +18,23 @@
                 <a href="google.com" class="headLink">Gmail</a>
                 <a href="google.com" class="headLink">Images</a>
             </div>    
-        </header>
+        </div>
     
 
         <div class="logo">
-            <img src="./assets/google_logo.png" height="92" class="center">
+            <img src="./assets/google_logo.png" height="92" id="googleLogo">
+        </div>
+
+        <div class="form">
+            <form action="random.html" method="GET">
+                <input type="text" name="searchInput" id="searchBar">
+            </form>
+            <span id="micLogo"></span>
         </div>
         
-        
+        <div class="discover">
+
+        </div>
         
         <footer>
             <span id="footleft">
@@ -40,5 +47,6 @@
                 <a href="google.com" class="footLink">Settings</a>
             </span>
         </footer>
+
     </body>
 </html>

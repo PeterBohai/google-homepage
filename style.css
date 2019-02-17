@@ -8,18 +8,16 @@ body {
     min-height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr auto auto;
-
-    
+    grid-template-rows: 39px 251px auto auto 39px;
 }
 /* ********************** HEADER ********************** */
-header{
-    position: absolute;
-    top: 21px;
+.header{
+    position: relative;
     width: 100%;
+    grid-row: 1/2;
 }
 
-header a{
+.header a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #000;
@@ -32,10 +30,15 @@ header a{
 }
 
 #headright {
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     padding-right: 30px;
 }
+
 #headleft {
+    position: absolute;
+    bottom: 0;
     float: left;
     padding-left: 10px; 
 }
@@ -43,14 +46,11 @@ header a{
 /* ********************** FOOTER ********************** */
 
 footer {
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    position: relative;
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
-    line-height: 40px;
     color: #222;
-    grid-row: 3 / 3;
+    grid-row: 5 / 6;
     padding-left: 3px;
     padding-right: 30px;
 }
@@ -58,6 +58,7 @@ footer {
 footer a {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
     color: #5F6380;
     text-decoration: none;
 }
@@ -66,23 +67,81 @@ footer a {
 }
 
 #footright {
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    top:0;
+    bottom: 0;
     float: right;
 }
 
-/* ********************** OTHER ********************** */
+/* ********************** LOGO ********************** */
 a:hover{
     text-decoration: underline;
 }
 
-.center {
+#googleLogo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 109px; 
-	display: block;
 }
 
 .logo {
-    height: 233px;
-    margin-top: 89px;
+    position: relative;
     width: 100%;
+    grid-row: 2/3;
+}
+
+/* ********************** SEARCH_BAR ********************** */
+
+.form {
+    position: relative;
+    grid-row: 3/4;
+}
+
+#searchBar {
+    position: absolute;
+    top: 28px;
+    left: 12px;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 48px;
+    height: 34px;
+    width: 420px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    border: none;
+}
+
+#searchBar:focus {
+    outline: none;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#searchBar:hover {
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+#micLogo {
+    position: absolute;
+    top: 22px;
+    left: 431px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 16px;
+    height: 44px;
+    width: 0px; 
+
+    background: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png") no-repeat;
+    background-size: 24px 24px;
+    background-position-y: center;
+    background-position-x: right; 
 }
