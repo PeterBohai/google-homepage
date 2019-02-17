@@ -8,7 +8,7 @@ body {
     min-height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 39px 251px auto auto 39px;
+    grid-template-rows: 39px 251px auto auto 41px;
 }
 /* ********************** HEADER ********************** */
 .header{
@@ -65,14 +65,24 @@ footer a {
 .footLink{
     padding-left: 27px;
 }
+.footLinkA{
+    padding-left: 23px;
+}
+.footLinkB{
+    padding-right: 23px;
+}
+.footLinkC{
+    padding-right: 0px;
+}
 
 #footright {
-    position: absolute;
-    margin-top: auto;
-    margin-bottom: auto;
-    top:0;
-    bottom: 0;
+    line-height: 39px;
     float: right;
+}
+
+#footleft {
+    line-height: 39px;
+
 }
 
 /* ********************** LOGO ********************** */
