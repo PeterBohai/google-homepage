@@ -5,11 +5,13 @@ html{
     
 }
 body {
+    font-family: Arial, Helvetica, sans-serif;
     min-height: 100%;
     width: 100%;
     display: grid;
     grid-template-rows: 49px 241px 75px 65px auto 41px;
 }
+
 /* ********************** HEADER ********************** */
 .header{
     position: relative;
@@ -19,7 +21,6 @@ body {
 }
 
 .header a{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #000;
     opacity: 0.75;
@@ -31,7 +32,11 @@ body {
 }
 
 .headLinkB {
-    padding-right: 12px;
+    padding-right: 13px;
+}
+
+.headLinkC {
+    padding-right: 11px;
 }
 
 #headright {
@@ -115,7 +120,6 @@ body {
 }
 
 /* ********************** FOOTER ********************** */
-
 footer {
     position: relative;
     background-color: #f2f2f2;
@@ -128,20 +132,23 @@ footer {
 
 footer a {
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     color: #5F6380;
     text-decoration: none;
 }
+
 .footLink{
     padding-left: 27px;
 }
+
 .footLinkA{
     padding-left: 23px;
 }
+
 .footLinkB{
     padding-right: 23px;
 }
+
 .footLinkC{
     padding-right: 0px;
 }
@@ -176,8 +183,7 @@ a:hover{
     grid-row: 2/3;
 }
 
-/* ********************** SEARCH_BAR ********************** */
-
+/* ********************** SEARCH BAR ********************** */
 .form {
     position: relative;
     grid-row: 3/4;
@@ -188,7 +194,6 @@ a:hover{
     top: 28px;
     left: 12px;
     right: 0;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin-left: auto;
     margin-right: auto;
@@ -219,8 +224,7 @@ a:hover{
     margin-right: auto;
     padding: 5px 16px;
     height: 44px;
-    width: 0px; 
-
+    width: 0; 
     background: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png") no-repeat;
     background-size: 24px 24px;
     background-position-y: center;
@@ -242,6 +246,7 @@ a:hover{
 
 }
 .grayButton {
+    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
@@ -252,9 +257,8 @@ a:hover{
     text-decoration: none;
     display: inline-block;
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin: 9px 4px;
+    margin: 9px 4px 9px 3px;
     cursor: pointer;
     height: 36px;
     line-height: 36px;
@@ -264,14 +268,13 @@ a:hover{
     border: 1px solid #4d90fe;
     outline: none;
 }
-
+/* ********************** DISCOVER TEXT ********************** */
 .discover {
     grid-row: 5/6;
     text-align: center;
 }
 
 .blackHistory{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     position: relative;
     text-decoration: none;
