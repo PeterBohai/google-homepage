@@ -5,6 +5,6 @@ from The Odin Project's [PROJECT: HTML/CSS](http://www.theodinproject.com/course
 
 ## The Replica Page:
 
-[Here](https://peterbohai.github.io/google-homepage/)is the Google homepage when signed in with the email 888peterh@gmail.com.
+[Here](https://peterbohai.github.io/google-homepage/) is the Google homepage when signed in with the email 888peterh@gmail.com.
 The design is from Feb.15, 2019.
 
