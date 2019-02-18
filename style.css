@@ -79,7 +79,8 @@ body {
 
 #appsB {
     display: inline-block;
-    background: url(./assets/noti.png);
+    background: url(./assets/notii.png);
+    background-size: 30px 30px;
     opacity: .65;
     width: 30px;
     height: 30px;
@@ -99,7 +100,8 @@ body {
 
 #appsC {
     display: inline-block;
-    background: url(https://lh3.googleusercontent.com/-TNp4v1MVz8w/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3re3kCsAyF2uK0BBCJ6dB0rMrCIhSQ/s32-c-mo/photo.jpg);
+    background: url(https://lh3.googleusercontent.com/-TNp4v1MVz8w/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3re3kCsAyF2uK0BBCJ6dB0rMrCIhSQ/s64-c-mo/photo.jpg);
+    background-size: 32px 32px;
     width: 30px;
     height: 30px;
     opacity: 1;
