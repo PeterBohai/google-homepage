@@ -85,7 +85,7 @@ body {
 
 #appsB {
     display: inline-block;
-    background: url(./assets/notii.png);
+    background: url(./img/notii.png);
     background-size: 30px 30px;
     opacity: .65;
     width: 30px;
