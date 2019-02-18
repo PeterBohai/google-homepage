@@ -8,11 +8,12 @@ body {
     min-height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 39px 251px 75px 65px auto 41px;
+    grid-template-rows: 49px 241px 75px 65px auto 41px;
 }
 /* ********************** HEADER ********************** */
 .header{
     position: relative;
+    display: flex;
     width: 100%;
     grid-row: 1/2;
 }
@@ -25,22 +26,89 @@ body {
     text-decoration: none;
 }
 
-.headLink {
+.headLinkA {
     padding-left: 15px;
+}
+
+.headLinkB {
+    padding-right: 12px;
 }
 
 #headright {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 122px;
     padding-right: 30px;
 }
 
 #headleft {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     float: left;
     padding-left: 10px; 
+}
+
+.appRightA {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 120px;
+    bottom: 3px;  
+}
+
+#appsA {
+    display: inline-block;
+    background: url(http://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+    background-position: -132px -38px;
+    opacity: .55;
+    width: 30px;
+    height: 30px;
+}
+
+#appsA:hover {
+    opacity: .85;
+}
+
+.appRightB {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 75px;
+    bottom: 3px;  
+}
+
+#appsB {
+    display: inline-block;
+    background: url(./assets/noti.png);
+    opacity: .65;
+    width: 30px;
+    height: 30px;
+}
+
+#appsB:hover {
+    opacity: .85;
+}
+
+.appRightC {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 31px;
+    bottom: 4px;  
+}
+
+#appsC {
+    display: inline-block;
+    background: url(https://lh3.googleusercontent.com/-TNp4v1MVz8w/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3re3kCsAyF2uK0BBCJ6dB0rMrCIhSQ/s32-c-mo/photo.jpg);
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+
+#appsC:hover {
+    border: none;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.26);
+    border-radius: 100%;
 }
 
 /* ********************** FOOTER ********************** */
@@ -126,7 +194,7 @@ a:hover{
     padding-left: 16px;
     padding-right: 48px;
     height: 34px;
-    width: 420px;
+    width: 520px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     border: none;
 }
@@ -142,7 +210,7 @@ a:hover{
 #micLogo {
     position: absolute;
     top: 22px;
-    left: 431px;
+    left: 531px;
     right: 0;
     margin-left: auto;
     margin-right: auto;
@@ -166,7 +234,7 @@ a:hover{
 .buttonPos {
     position: relative;
     top: 19px;
-    left: 8px;
+    left: 0;
     display: inline-block;
 
 }
@@ -187,6 +255,11 @@ a:hover{
     cursor: pointer;
     height: 36px;
     line-height: 36px;
+}
+
+.grayButton:focus {
+    border: 1px solid #4d90fe;
+    outline: none;
 }
 
 .discover {
